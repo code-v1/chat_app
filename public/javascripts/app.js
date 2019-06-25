@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('send-msg-btn').addEventListener('click', function(){
         socket.emit('add-message', {
             name: userName.value,
-            msg: latestMsg.value
+            msg: latestMsg.value,
+            
         });
         latestMsg.value = '';
     });
